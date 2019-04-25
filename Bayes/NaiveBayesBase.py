@@ -32,7 +32,7 @@ def Fit(trainX, trainY):
     p1Class = sum(trainY) / len(trainY)
     p0Num = np.ones(len(trainX[0]))
     p1Num = np.ones(len(trainX[0]))
-    p0Denom = 2.0
+    p0Denom = 2.0 #拉普拉斯变换
     p1Denom = 2.0
     for i in range(len(trainX)):
         if trainY[i] == 1:
